@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+        var items = document.getElementsByClassName("renew")[0];
+        var list=items.getElementsByClassName("epetfoodblock");
+        var arr=[];
+        for (var o = 0; o < list.length; o++) {
+            var obj={};
+            var txt=list[o].getElementsByClassName("epetfood-tit")[0].innerText;
+            var gg = list[o].querySelectorAll(".clearfix .epetfood-pro .lib-menu .ftc li");
+            for(var i=0;i<gg.length;i++){
+                var sgz = gg[i].getElementsByTagName("span")[0].innerText;
+                // sgzz.push(sgz);
+                console.log(sgz);
+                
+            }
+            
+            // var name=item.getElementsByClassName("ft12 c666 overflow")[0];
+            // var price=item.getElementsByClassName("ft16 cred dprice mt5")[0];
+            obj.txt= sgzz;
+            // obj.name=name.innerText;
+            // obj.price=price.innerText;
+            arr.push(obj);
+        }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
